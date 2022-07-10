@@ -3,6 +3,8 @@ const MatriculaController = require('../controllers/MatriculaController');
 
 const router = Router();
 
+router.get("/", (res, req) => res.status(200).json({message: "Olá, bem vindo!"}))
+
 router.get('/matriculas', MatriculaController.buscarMatricula)
 
 router.get('/matriculas/:id', MatriculaController.buscarUmaMatricula)

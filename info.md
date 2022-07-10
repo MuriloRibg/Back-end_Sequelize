@@ -19,3 +19,10 @@
 ## Terceira parte
     - [ ] npm outdated = olhar a versão
     - [ ] npm update = atualizar
+
+## Docker - 
+    - A instrução ARG carrega variáveis apenas no momento de build da imagem, enquanto a instrução ENV carrega variáveis que serão utilizadas no container. 
+    #Criando a variável de ambiente e setando ela
+        ARG PORT_BUILD=3000
+        ENV PORT=$PORT_BUILD
+        EXPOSE $PORT_BUILD

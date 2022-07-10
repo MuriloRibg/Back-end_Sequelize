@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:  
+    build: . #onde fica o Dockerfile
+    command: npm start #o camando para iniciar
+    ports:
+      - '3000:3000' #a porta q vai ser redirecionada
+    volumes:
+      - .:/usr/app 
+ 
